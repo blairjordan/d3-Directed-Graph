@@ -1,0 +1,47 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div id="new-node-details" style="display:none">
+
+  <label>Name:
+    <input type="text" id="node-name" />
+  </label>
+  <br/>
+
+  <label for="node-type">Type:
+    <select id="node-type">
+      <option id="1">1</option>
+      <option id="2">2</option>
+      <option id="3">3</option>
+      <option id="4">4</option>
+      <option id="5">5</option>
+      <option id="6">6</option>
+    </select>
+  </label>
+  <br/>
+
+  <button type="button" id="save-node-name">
+    Save node details
+  </button>
+</div>
+
+<div id="plan-container">
+</div>
+
+<div style="display:inline-block;">
+  <span> Nodes: </span>
+  <textarea id="nodes-json-dump" rows="10" cols="30">
+  </textarea>
+</div>
+<div style="display:inline-block;">
+  <span> Links: </span>
+  <textarea id="links-json-dump" rows="10" cols="30">
+  </textarea>
+</div>
+<script src="graph.js"></script>
+</body>
+</html>
